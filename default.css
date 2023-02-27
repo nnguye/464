@@ -1,0 +1,125 @@
+/* default.css for ch03/market/index.html*/
+* {
+    padding: 1px;
+    margin: 1px;
+}
+
+/* The following line may be redundant, but does no harm. */
+main, header { display: block;}
+
+body {
+    width: 900px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background-color: beige;
+    margin: 10px;
+}
+
+.flex_cont {
+    display: flex;
+    /* justify-content:flex-end;   */
+}
+.flex_item{
+    display: flex;
+    flex:1;
+}
+
+
+main, header {
+    margin: 10px;
+    width: 880px;
+}
+
+div#logo {
+    float: left;
+    margin: 10px 0;
+}
+
+div#address {
+    float: right;
+    margin-top: 20px;
+    text-align: right;
+}
+.nav_item{
+    background-color: green;
+    border: 2px solid white;
+    text-align: center;
+  
+}
+
+div#image {
+    float: left;
+    width: 310px;
+    
+    text-align: right;
+}
+title {
+    color:darkturquoise;
+}
+h1 {
+    color: coral;
+}
+ 
+a.active {
+    background-color: #04AA6D;
+    color:darkblue;
+}
+  
+a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+p{
+    color:blueviolet;
+}
+
+div#a {
+    display: inline-flexbox;
+    color:darkblue;
+    text-align: right;
+    padding: 0;
+    text-decoration: none;  
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color:cornflowerblue; */
+}
+/***********/
+/* .flex_container{
+    display: flex;
+    background-color: lightgray;
+    flex-direction:row;
+    flex-direction:column;
+    justify-content:right;
+} */
+
+/* .flex_item{
+    background-color: rgb(173, 215, 155);
+    margin: 1px;
+    font-size:1em;
+    flex:1;
+    display: inline-flexbox;
+    color:darkblue;
+    text-align: right;
+    padding: 0; */
+    /* text-decoration: none;  */
+/* } */
+
+
+/* .active {
+    background-color: #04AA6D;
+    color:darkblue;
+} */
+  
+/* div:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}  */
+
+
+  
+
+  
