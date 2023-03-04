@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> SaiGonFruits</title>
+        <link rel="stylesheet" href="../css/default.css">   
+    </head>
+    <div id="logo">
+        <img src="../images/benthanhmarket.jpeg"
+        alt="SaiGon Fruits"
+        width="150"
+        height="70">
+    <h3> SaiGon Fruits</h3>
+    </div>
+    <div>
+        <h1> Welcome to SaiGon Fruits</h1>
+        <p> All fruits in SaiGon Fruits import from VietNam </p>
+    </div>
+    <body>
+        <form id="feedback-form" onsubmit="feedbackFormValidate()">
+            <h2>Thanks for giving us for your feedback online</h2>
+            <label for="rating">
+                How was your overall experience?
+            </label>
+        
+            <div class="star-rating">
+                <label for="star1"><input type="radio" id="star1" name="rating" value="1">1 &#9733 </label>
+                <label for="star2"><input type="radio" id="star2" name="rating" value="2">2 &#9733</label>
+                <label for="star3"><input type="radio" id="star3" name="rating" value="3">3 &#9733</label>
+                <label for="star4"><input type="radio" id="star4" name="rating" value="4">4 &#9733</label>
+                <label for="star5"><input type="radio" id="star5" name="rating" value="5">5 &#9733</label>
+            </div>
+            <table>
+                <tr>
+                    <label> First Name:</label>
+                    <input type="text" name="firstName" size="30" required>
+                </tr>
+                <tr>
+                    <label>Last Name:</label>
+                    <input type="text" name="lastName" size="30" required>
+                    
+                </tr>
+                <tr>
+                    <label>Phone Number:</label>
+                    <input type="text" name="phone" size="30" required>
+                </tr>
+                <tr>
+                    <label>Subject:</label>
+                    <input type="text" name="subject" size="30" required>
+                </tr>
+                <tr>
+                    <label>Comments:</label>
+                    <textarea id="message" name="message" rows="6" cols="30" required></textarea>
+                </tr>
+                <tr>
+                    <td colspan="2">Please check here if you wish to receive a reply:</td>
+                    <input type="checkbox" name="reply" value="yes">
+                </tr>
+                <tr>
+                    <input type="reset" value="Reset Form">
+                    <button type="submit" id="submit-button">Submit</button>
+                </tr>
+            </table>  
+            <script src="../pages/feedback.html"></script>
+            <div>
+                <td colspan="3">SaiGon Fruits &copy; 2023 Nhien Nguyen</td>
+            </div>
+            <div>
+                <td><a  href="../index.html">Home</a></td>
+                <td><a href="../pages/contact.html">Contact Us</a></td>
+            </div>
+        </form> 
+    </body>   
+</html>

@@ -1,3 +1,5 @@
+
+
 /* default.css for ch03/market/index.html*/
 * {
     padding: 1px;
@@ -9,25 +11,27 @@ main, header { display: block;}
 
 body {
     width: 900px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, sans-serif, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     background-color: beige;
     margin: 10px;
+    color:#333;
+    line-height: 1.5;
 }
 
 .flex_cont {
     display: flex;
-    /* justify-content:flex-end;   */
+    justify-content: flex-end;
 }
 .flex_item{
     display: flex;
-    flex:1;
+    flex: 1;
 }
-
 
 main, header {
     margin: 10px;
     width: 880px;
+    padding: 20px;
 }
 
 div#logo {
@@ -53,7 +57,7 @@ div#image {
     
     text-align: right;
 }
-title {
+h1 title {
     color:darkturquoise;
 }
 h1 {
@@ -74,7 +78,7 @@ p{
 }
 
 div#a {
-    display: inline-flexbox;
+    display: inline-flex;
     color:darkblue;
     text-align: right;
     padding: 0;
@@ -87,39 +91,39 @@ ul {
     overflow: hidden;
     /* background-color:cornflowerblue; */
 }
-/***********/
-/* .flex_container{
+/****************/
+/* FeedBackForm */
+/****************/
+form {
     display: flex;
-    background-color: lightgray;
-    flex-direction:row;
     flex-direction:column;
-    justify-content:right;
-} */
+    align-items: center;
+    margin-top: 100px;
+}
+label {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+textarea {
+    width: 50%;
+    height:200px;
+    font-size: 16px;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+h2 {
+    color: rgb(9, 103, 103);
+}
+.stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
 
-/* .flex_item{
-    background-color: rgb(173, 215, 155);
-    margin: 1px;
-    font-size:1em;
-    flex:1;
-    display: inline-flexbox;
-    color:darkblue;
-    text-align: right;
-    padding: 0; */
-    /* text-decoration: none;  */
-/* } */
 
 
-/* .active {
-    background-color: #04AA6D;
-    color:darkblue;
-} */
-  
-/* div:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}  */
-
-
-  
-
-  
