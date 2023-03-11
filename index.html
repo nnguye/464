@@ -1,15 +1,16 @@
+   
 <!DOCTYPE html>
 <!-- index.html for ch03/market -->
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title> SaiGonFruits</title>
-        <link rel="stylesheet" href="css/default.css">
-        <base href="../market/">
-        
-    </head>
+<html lang="en">  
+<head>
+    <meta charset="utf-8">
+    <title> SaiGonFruits</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <base href="../market/">
+</head>
+<body>
     <div id="logo">
-        <img src="images/benthanhmarket.jpeg"
+        <img src="./images/benthanhmarket.jpeg"
         alt="SaiGon Fruits"
         width="150"
         height="70">
@@ -19,71 +20,61 @@
         <h1> Welcome to SaiGon Fruits</h1>
         <p> All fruits in SaiGon Fruits import from VietNam </p>
     </div>
-    <body>
-        <header class="flex_cont">
-            
-           
-            <nar class="flex_cont">
-
-                <div class="flex_item nar_item">
-                    <a class="active" href="index.html">Home</a>
-                </div>
-
-                <div class="flex_item nar_item">
-                    <a href="pages/categories.html">Categories</a>
-                </div>
-
-                <div class="flex_item nar_item">
-                    <a href="pages/pickupanddelivery.html">Pick and delivery</a>
-                </div>
-
-                <div class="flex_item nar_item">
-                    <a href="pages/addCart.html">Add cart</a>
-                </div>
-
-                <div class="flex_item nar_item">  
+    <header class="flex_cont">
+        <nav class="flex_cont">
+            <div class="dropdown">
+                <button class="dropbtn">HomePage</button>
+                <div class="dropdown-content">
+                    <!-- <a class="active" href="./index.html">Home</a> -->
+                    <a href="./pages/categories.html">Categories</a>
+                    <a href="./pages/pickupanddelivery.html">Pick and delivery</a>
+                    <a href="./pages/yourCart.html">Your cart</a>
                     <a href="pages/aboutUs.html">About Us</a>
-                </div>
-            </nar>
-        </header>
-        <main>
-            <table>
-               
-                <td>
-                        <ul>
-                            <img src="images/durian2.jpeg"
-                            width="200"
-                            height="200">
-                        
-                            <img src="images/jackfruit.jpeg"
-                            width="200"
-                            height="200">
-                       
-                            <img src="images/longan.jpeg"
-                            width="200"
-                            height="200">
-                    
-                            <img src="images/lychee.jpeg"
-                            width="200"
-                            height="200">
-                       
-                            <img src="images/pomelo.jpeg"
-                            width="200"
-                            height="200">
-                        </ul>
-                    
-                </td>    
-            </table>
-               
-        </main>
-        <div>
-            <td colspan="3">SaiGon Fruits &copy; 2023 Nhien Nguyen</td>
-        </div>
-        <div>
-            <td><a href="../pages/contact.html">Contact Us</a></td>
-            <!-- <td><a href="pages/sitemap.html">Site Map</a></td> -->
-        </div>   
-    </body>
-</html>
+                </div>  
+            </div>  
+            <a href="./pages/signup.html" class="signup">Sign Up</a>
+            <button onclick="darkLightMode()">Dark&Light Mode</button>  
+        </nav>    
+    </header>
     
-       
+    <table>
+        <td>
+            <ul>
+                <img src="./images/durian2.jpeg"
+                width="200"
+                height="200">
+            
+                <img src="./images/jackfruit.jpeg"
+                width="200"
+                height="200">
+        
+                <img src="./images/longan.jpeg"
+                width="200"
+                height="200">
+        
+                <img src="./images/lychee.jpeg"
+                width="200"
+                height="200">
+        
+                <img src="./images/pomelo.jpeg"
+                width="200"
+                height="200">
+            </ul>
+            
+        </td>    
+    </table>
+    <div>
+        <td colspan="3">SaiGon Fruits &copy; 2023 Nhien Nguyen</td>
+    </div>
+    <div>
+        <td><a href="./pages/contact.html">Contact Us</a></td>
+        <td><a href="./pages/feedback.html">Feedback</a></td>
+    </div>  
+    <script>
+        function darkLightMode() {
+        const element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    </script>   
+</body>
+</html>    

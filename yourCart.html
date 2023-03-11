@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
-<!-- pickupanddelivery.html for ch03/market -->
+<!-- addCart.html -->
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title> SaiGonFruits</title>
         <link rel="stylesheet" href="../css/default.css">
+        
     </head>
     <body>
         <div id="logo">
@@ -13,44 +14,42 @@
             alt="SaiGon Fruits"
             width="150"
             height="70">
-            <h3> SaiGon Fruits</h3>
+        <h3> SaiGon Fruits</h3>
         </div>
         <div>
             <h1> Welcome to SaiGon Fruits</h1>
             <p> All fruits in SaiGon Fruits import from VietNam </p>
-                
         </div>
         <header class="flex_cont">
             <nav class="flex_cont">
                 <div class="dropdown">
-                    <button class="dropbtn">Pick Up And Delivery</button>
+                    <button class="dropbtn">Your Cart</button>
                     <div class="dropdown-content">
                         <!-- <a class="active" href="./index.html">Home</a> -->
                         <a href="../pages/categories.html">Categories</a>
+                        <a href="../pages/pickupanddelivery.html">Pick and delivery</a>
                         <a href="../pages/aboutUs.html">About Us</a>
-                        <a href="../pages/yourCart.html">Your cart</a>
                         <a href="../index.html">Home</a>
                     </div>  
                 </div>  
             </nav>    
         </header>
-        <address>
-            * Pick up at:<br>
-            1111 Y Street, Lincoln , NE<br>
-            68521, USA <br>
-        </address>
-        <br>
-        <delivery>
-            * Delivery: Free delivery on orders over $50 <br>
-        </delivery> 
-        <br>
+        <article>  
+            <div id="item">
+                <h3> Your cart</h3>
+                <span class="price">$8.00</span>
+                <button id="add-to-card-button">Add to Card</button>
+                <!-- <p> Coming soon...</p>   -->
+            </div>
+        </article>
         <div>
             <td colspan="3">SaiGon Fruits &copy; 2023 Nhien Nguyen</td>
         </div>
         <div>
-            <td><a href="../pages/contact.html">Contact Us</a></td>
+            <td><a href="./contact.html">Contact Us</a></td>
             <!-- <td><a href="pages/sitemap.html">Site Map</a></td> -->
         </div>  
-
     </body>
+    
 </html>
+

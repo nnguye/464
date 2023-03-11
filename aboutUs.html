@@ -7,71 +7,51 @@
         <title> SaiGonFruits</title>
         <link rel="stylesheet" href="../css/default.css">
     </head>
-    <div id="logo">
-        <img src="../images/benthanhmarket.jpeg"
-        alt="SaiGon Fruits"
-        width="150"
-        height="70">
-    <h3> SaiGon Fruits</h3>
-    </div>
-    <div>
-        <h1> Welcome to SaiGon Fruits</h1>
-        <p> All fruits in SaiGon Fruits import from VietNam </p>
-    </div>
     <body>
-       
-          <header class="flex_cont">
-            
-           
-            <br>
-            <br>
-            <nar class="flex_cont">
-
-                <div class="flex_item nar_item">
-                    <a href="../index.html">Home</a>
-                </div>
-
-                <div class="flex_item nar_item">
-                    <a href="../pages/categories.html">Categories</a>
-                </div>
-
-                <div class="flex_item nar_item">
-                    <a href="../pages/pickupanddelivery.html">Pick and delivery</a>
-                </div>
-
-                <div class="flex_item nar_item">
-                    <a href="../pages/addCart.html">Add cart</a>
-                </div>
-
-                <div class="flex_item nar_item">  
-                    <a class="active" href="../pages/aboutUs.html">About Us</a>
-                </div>
-            </nar>
+        <div id="logo">
+            <img src="../images/benthanhmarket.jpeg"
+            alt="SaiGon Fruits"
+            width="150"
+            height="70">
+        <h3> SaiGon Fruits</h3>
+        </div>
+        <div>
+            <h1> Welcome to SaiGon Fruits</h1>
+            <p> All fruits in SaiGon Fruits import from VietNam </p>
+        </div>
+        <header class="flex_cont">
+            <nav class="flex_cont">
+                <div class="dropdown">
+                    <button class="dropbtn">About US</button>
+                    <div class="dropdown-content">
+                        <!-- <a class="active" href="./index.html">Home</a> -->
+                        <a href="../pages/categories.html">Categories</a>
+                        <a href="../pages/pickupanddelivery.html">Pick and delivery</a>
+                        <a href="../pages/yourCart.html">Your cart</a>
+                        <a href="../index.html">Home</a>
+                    </div>  
+                </div>  
+            </nav>    
         </header>
-        
-        <main>
-            
-            <div id="text">
-                <h3> SaiGon Fruits founded in 01/2023, SaiGon fruits is a store to supply tropical fruits, especially in southern Vietnam. </h3>
-                <p> Address: </p>
-                <p> 1111 Y Street </p>
-                <p> Lincoln , NE </p>
-                <p> 68521 </p>
-            </div>
-            <br>
-            <div id="videos">
-                <video width="800" height="400" autoplay muted>
-                    <source src="../videos/fruitsvideo.webm" type="video/webm">
-                    <source src="../videos/fruitsvideo.ogv" type="video/ogg">
-                    Your browser supports neither the mp4 nor the ogg video format.
-                </video>
-            </div>
-        </main>
+        <h3> SaiGon Fruits founded in 01/2023, SaiGon fruits is a store to supply tropical fruits, especially in southern Vietnam. </h3>
+        <address>
+            Visit us at:<br>
+            1111 Y Street, Lincoln , NE<br>
+            68521, USA
+        </address>
+        <div id="videos">
+            <video width="800" height="400" autoplay muted>
+                <source src="../videos/fruitsvideo.webm" type="video/webm">
+                <source src="../videos/fruitsvideo.ogv" type="video/ogg">
+                Your browser supports neither the mp4 nor the ogg video format.
+            </video>
+        </div>
+       
         <div>
             <td colspan="3">SaiGon Fruits &copy; 2023 Nhien Nguyen</td>
         </div>
         <div>
-            <td><a href="../pages/contact.html">Contact Us</a></td>
+            <td><a href="./contact.html">Contact Us</a></td>
             <!-- <td><a href="pages/sitemap.html">Site Map</a></td> -->
         </div>
     </body>
